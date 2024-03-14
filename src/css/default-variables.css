@@ -1,0 +1,41 @@
+/* применяем стили к самому верхнему элементу в нашем случае, это html, просто у :root приоритет выше */
+:root {
+    --header-height: 3.5rem;
+
+    /* Colors */
+    --primary-color: hsl(230, 62%, 56%);
+    --title-color: hsl(230, 70%, 16%);
+    --text-color: hsl(230, 16%, 45%);
+    --border-color: hsl(230, 50%, 90%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(230, 100%, 96%);
+    --container-color: hsl(230, 100%, 97%);
+
+    /* Font and typography */
+    /* .5rem = 8px | 1rem = 16px ... */
+    --body-font: "Montserrat", sans-serif;
+    --secondary-font: "Montagu Slab", serif;
+
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smallest-font-size: .75rem;
+
+    @media screen and (max-width: 1150px) {
+        --biggest-font-size: 3.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smallest-font-size: .813rem;
+    }
+
+    /* Font weight */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}

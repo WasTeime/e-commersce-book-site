@@ -1,0 +1,89 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* variables */
+@import url('default-variables.css');
+/* components */
+@import url('header.css');
+
+/* BASE */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: background-color .4s;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-family: var(--secondary-font);
+    font-weight: var(--font-medium);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Component css classes */
+.container {
+    max-width: 1220px;
+    margin-inline: 1.5rem;
+    /* это хуета типо в зависимости от направления текста в блоке марджины меняют свои места,
+    типо если текст обычно располагается, тогда margin слева и справа, если текст повернут на 90 градусов вправо,
+    тогда margin сверху и снизу */
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+    /* аналогично inline, только в block отступы сверху и снизу элемента смотрятся */
+}
+
+.section__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    font-family: var(--secondary-font);
+    margin-bottom: 2rem;
+}
+
+.main {
+    overflow: hidden;
+}
