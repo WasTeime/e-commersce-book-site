@@ -4,6 +4,7 @@
 @import url('default-variables.css');
 /* components */
 @import url('header.css');
+@import url('search.css');
 
 /* BASE */
 * {

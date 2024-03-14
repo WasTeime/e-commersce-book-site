@@ -1,0 +1,45 @@
+@import url('default-variables.css');
+
+.search {
+    width: 100%;
+    height: 100%;
+    padding: 8rem 1.5rem;
+    position: fixed;
+    top: -100%;
+    background-color: hsla(230, 12%, 96%, .6);
+    backdrop-filter: blur(7px);
+    transition: top .2s;
+    z-index: 100;
+}
+
+.search__form {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: 2px solid var(--border-color);
+    background-color: var(--white-color);
+}
+
+.search__icon {
+    font-size: var(--h2-font-size);
+}
+
+.search__input {
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+.search__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.show-search {
+    top: 0;
+}
