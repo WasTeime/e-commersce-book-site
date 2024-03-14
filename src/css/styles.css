@@ -5,6 +5,7 @@
 /* components */
 @import url('header.css');
 @import url('search.css');
+@import url('login.css');
 
 /* BASE */
 * {
@@ -87,4 +88,17 @@ img {
 
 .main {
     overflow: hidden;
+}
+
+.button {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+    padding: 1rem 1.5rem;
+    transition: box-shadow .4s;
+}
+
+.button:hover {
+    box-shadow: 0 10px 15px hsla(230, 72%, 32%, .3);
 }
